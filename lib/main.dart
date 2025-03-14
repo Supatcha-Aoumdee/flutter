@@ -1,17 +1,16 @@
+import 'package:lab1/rest_api/rest_api_product_list.dart';
 import 'package:flutter/material.dart';
 
-import 'package:lab1/api_air_quality_index/air_quality_index.dart';
-void main() {
-   runApp(const MyApp());
- }
- 
- class MyApp extends StatelessWidget {
-   const MyApp({super.key});
- 
-   @override
-   Widget build(BuildContext context){
-     return MaterialApp(home: AirQualityIndex());
-   }
- }
- 
- 
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  runApp(const MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(home: RestApiProductList());
+  }
+}
