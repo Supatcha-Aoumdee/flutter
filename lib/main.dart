@@ -1,4 +1,4 @@
-import 'package:lab1/rest_api/rest_api_product_list.dart';
+import 'package:lab1/animated_container/animated_traffic.dart';
 import 'package:flutter/material.dart';
 
 void main() async {
@@ -11,6 +11,6 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(home: RestApiProductList());
+  return MaterialApp(home: AnimatedTraffic());
   }
 }
